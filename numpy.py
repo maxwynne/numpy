@@ -5,3 +5,16 @@ weight_kg = [81.65, 97.52, 95.25, 92.98, 86.18, 88.45]
 import numpy as np
 np_height_kg = weight_kg
 converted_weight = float(weight * pound)
+
+---
+
+# ALTERNATIVE SOLUTION
+
+# create a numpy array np_weight_kg from weight_kg
+np_weight_kg = np.array(weight_kg)
+
+# create np_weight_lbs from np_weight_kg
+np_weight_lbs = np_weight_kg * 2.2
+
+# print out np_weight_lbs
+print(np_weight_lbs)
